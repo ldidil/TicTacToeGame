@@ -2,17 +2,16 @@
 #include <iostream>
 #include <string>
 #include "Player.h"
+#include "Board.h"
 
 class Game
 {
 private:
-	char board[3][3];
+	Board board;
 	Player player1;
 	Player player2;
 public:
 	void start();
-	void clean();
-	void display();
 	void turn(int i);
 	void shot(Player p);
 	bool isWinning(int i);
